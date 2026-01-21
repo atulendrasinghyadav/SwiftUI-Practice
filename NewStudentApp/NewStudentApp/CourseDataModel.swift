@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+struct Course: Hashable, Identifiable{
+    let id = UUID()
+    let name: String
+    let professor: String
+    let credits: Int
+}
+
+class CourseModel{
+    static var courseList: [Course] = [
+        Course(name: "Ml", professor: "Dr. Sachin", credits: 3),
+        Course(name: "Toc", professor: "Dr. Arun Rai", credits: 2),
+        Course(name: "ADSA", professor: "Dr. Harshit Jain", credits: 4)
+    ]
+}
