@@ -1,0 +1,4 @@
+        ZStack{
+            Color.red
+                .ignoresSafeArea()
+        }
